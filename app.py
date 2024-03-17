@@ -6,7 +6,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # Initialize Flask app
 app = Flask(__name__)
 # Set secret key for session management
-app.secret_key = 'your_secret_key'  # Replace with a strong secret key 
+app.secret_key = 'your_secret_key'  #Replace with a strong secret key 
 # Configure SQLAlchemy to use SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
